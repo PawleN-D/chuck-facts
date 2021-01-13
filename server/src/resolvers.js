@@ -1,9 +1,9 @@
 module.exports = {
     Query: {
-      jokes: (_, __, { dataSources }) =>
+      categories: (_, __, { dataSources }) =>
         dataSources.jokesAPI.getAllCategories(),
       joke: (_, { id }, { dataSources }) =>
-        dataSources.jokesAPI.getRandomById({ category: String }),
+        dataSources.jokesAPI.getRandomByCategory({ category: String }),
     }
   };
   

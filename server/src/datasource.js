@@ -8,27 +8,23 @@ class JokesAPI extends RESTDataSource {
 
   //Data fetching methods
   async getAllCategories() {
-    const response = await this.get('/categories');
-    return Array.isArray(response)
-      ? response.map(joke => this.jokeReducer(joke))
-      : [];
+    const query = "/categories";
+    const response = await this.get(query);
+    // console.log(response);
+    return response.map(category => category);
   }
 
-  async getRandomByCategory({ category }) {
-    const response = await this.get(`/random?${category}`);
-    return this.jokeReducer(Math.floor(Math.random() * response));
-  }
+  // async getRandomByCategory({ category }) {
+  //   const response = await this.get(`/random?${category}`);
+  //   return this.jokeReducer(Math.floor(Math.random() * response));
+  // }
 
   // async getMovie(id) {
   //   return this.get(`movies/${id}`);
   // }
-  jokeReducer(joke) {
-    console.log(joke)
-    return {
-      id: joke.id || 0,
-      category: joke.category,
-      joke: joke.value,
-    };
+  categoryReducer(category) {
+    console.log(category)
+    return category[0] ;
   }
   
   

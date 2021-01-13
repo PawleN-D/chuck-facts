@@ -2,16 +2,20 @@ const { gql } = require('apollo-server');
 
 const typeDefs = gql`
   #Schema will go here
-  type Jokes {
+  type Categories {
+    category: String  
+
+  }
+
+  type Joke {
     id: ID!
-    category: [String]
-    joke: String
-    date: String
+    content: String!
+    category: String!
   }
 
   type Query {
-    jokes: [Jokes]!
-    joke(category: String!): Jokes
+    categories: [Categories]
+    joke(category: String!): Joke
   }
   
 `;
