@@ -6,7 +6,7 @@ class JokesAPI extends RESTDataSource {
     this.baseURL = 'https://api.chucknorris.io/jokes';
   }
 
-  //Data fetching methods
+  //Category Data fetching method
   async getAllCategories() {
     const response = await this.get('/categories');
     return Array.isArray(response)
@@ -15,11 +15,18 @@ class JokesAPI extends RESTDataSource {
   }
 
   categoryReducer(category) {
-  return {
-    id: category[0],
-    name: category
-  };
-}
+    
+    return {
+      name: category,
+      content: category.value,
+      id: category.id,
+    };
+  }
+
+  async randomJokeByCategory({ category }) {
+    const response = await this.get('/random?', { category: category });
+    return this.categoryReducer(response);
+  }
   
 }
 
