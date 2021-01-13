@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "apollo-datasource-rest": "^0.9.6",
     "apollo-server": "^2.19.1",
     "graphql": "^15.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
