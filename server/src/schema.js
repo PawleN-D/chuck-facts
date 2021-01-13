@@ -4,8 +4,8 @@ const typeDefs = gql`
   #Schema will go here
   type Jokes {
     id: ID!
-    category: [String]!
-    joke: String!
+    category: [String]
+    joke: String
     date: String
   }
 
