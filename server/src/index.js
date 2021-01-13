@@ -9,7 +9,7 @@ const server = new ApolloServer({
     resolvers,
     dataSources: () => ({
       jokesAPI: new JokesAPI(),
-      
+
     })
   });
 

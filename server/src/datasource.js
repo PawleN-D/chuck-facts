@@ -14,6 +14,13 @@ class JokesAPI extends RESTDataSource {
     return response.map(category => category);
   }
 
+    async getRandomByCategory(category) {
+    const query = `/random${category}`;
+    const response = await this.get(query);
+    // console.log(response);
+    return response.map(category => category);
+  }
+
   // async getRandomByCategory({ category }) {
   //   const response = await this.get(`/random?${category}`);
   //   return this.jokeReducer(Math.floor(Math.random() * response));
