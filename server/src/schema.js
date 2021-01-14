@@ -6,10 +6,11 @@ const typeDefs = gql`
     name: String 
   }
 
-  type Joke {
+  type Joke{
     id: ID!
     content: String!
-    category: String!
+    name: String!
+    url: String!
   }
 
   type Query {

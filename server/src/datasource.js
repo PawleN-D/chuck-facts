@@ -15,11 +15,12 @@ class JokesAPI extends RESTDataSource {
   }
 
   categoryReducer(category) {
-    
+    //Mapping query
     return {
       name: category,
       content: category.value,
       id: category.id,
+
     };
   }
 
