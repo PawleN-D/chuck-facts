@@ -8,7 +8,7 @@ const CategoryTile = ({category}) => {
             <h3>Chuck Norris Facts</h3>
             <hr/>
             <p>For Category</p>
-            <p>{category}</p>
+            <button>{category}</button>
         </div>
     )
 }

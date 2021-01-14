@@ -1,4 +1,5 @@
 .facttile {
+  display: flex;
   background: rgb(18, 32, 48);
   border: 2px solid #fff;
 }
@@ -6,4 +7,10 @@
 .header {
   background: rgb(109, 100, 50);
   color: blue;
+  justify-content: center;
+  align-content: center;
+}
+
+hr {
+  width: 20%;
 }
