@@ -5,6 +5,7 @@ import { gql, useQuery } from "@apollo/client";
 export const GET_JOKE = gql`
   query GetRandomJoke($category: String!) {
     joke(category: $category) {
+      id
       content
     }
   }
