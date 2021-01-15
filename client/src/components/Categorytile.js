@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from "react-router-dom";
 import "./component.css";
 
 const CategoryTile = ({category}) => {
@@ -8,7 +8,8 @@ const CategoryTile = ({category}) => {
             <h3>Chuck Norris Facts</h3>
             <hr/>
             <p>For Category</p>
-            <button>{category}</button>
+            <p>{category}</p>
+            <Link to={`/random?${category}`} className="btn btn-primary">Discover Fact</Link>
         </div>
     )
 }
