@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import Joke from './Joke';
+// import Header from "./components/Header"
 import {
   BrowserRouter as Router,
-  // Route,
+  Route,
+  Switch,
+  withRouter
 } from 'react-router-dom';
 
 import {
@@ -12,7 +16,7 @@ import {
   HttpLink,
   InMemoryCache,
 } from '@apollo/client';
-// import Joke from './components/Joke';
+
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
@@ -22,13 +26,13 @@ const client = new ApolloClient({
 })
 
 ReactDOM.render(
-  <React.StrictMode>
     <ApolloProvider client={client}>
       <Router>
-        <App />
-        
+        <Switch>
+          <Route exact path="/" component={App} />
+          <Route path="/random?{category}" component={Joke} />
+        </Switch>
       </Router>
-    </ApolloProvider>
-  </React.StrictMode>,
+    </ApolloProvider>,
   document.getElementById('root')
 );

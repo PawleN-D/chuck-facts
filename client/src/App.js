@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { useQuery, gql } from '@apollo/client';
-
+import { withRouter } from "react-router";
 import CategoryTile from "./components/Categorytile";
 import Header from "./components/Header"
 
@@ -34,4 +34,4 @@ const Categories = () => {
   );
 };
 
-export default Categories;
+export default withRouter(Categories);
