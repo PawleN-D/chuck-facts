@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import Joke from './Joke';
+
 // import Header from "./components/Header"
 import {
   BrowserRouter as Router,
@@ -30,8 +31,8 @@ ReactDOM.render(
       <Router>
         <Switch>
           <Route exact path="/" component={App} />
-          <Route path="/random?{category}" component={Joke} />
-        </Switch>
+          <Route path="/random" component={Joke} />
+      </Switch>
       </Router>
     </ApolloProvider>,
   document.getElementById('root')

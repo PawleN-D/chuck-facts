@@ -13,7 +13,7 @@ const CategoryTile = ({ category }) => {
                         <p className="text-">{category} Category</p>
                     </div>
                     <div className="col-md-3 mt-5">
-                        <Link to={`/random?${category}`} className="btn btn-primary mt-4"> Discover Fact</Link>
+                        <Link to={`/random?category=${category}`} className="btn btn-primary mt-3"> Discover Fact</Link>
                     </div>
                 </div>
             </div>
