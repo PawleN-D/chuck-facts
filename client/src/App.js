@@ -1,10 +1,9 @@
 import React, { Fragment } from "react";
 import { useQuery, gql } from '@apollo/client';
-import { Switch, Route } from "react-router-dom";
 import { withRouter } from "react-router";
 import CategoryTile from "./components/Categorytile";
 import Header from "./components/Header";
-import Joke from './Joke';
+
 
 
 export const GET_CATEGORIES = gql`

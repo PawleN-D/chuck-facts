@@ -7,8 +7,7 @@ import Joke from './Joke';
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
-  withRouter
+  Switch
 } from 'react-router-dom';
 
 import {
