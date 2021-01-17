@@ -4,8 +4,8 @@
 
 ## Description
 
-The app fetches data from a REST api from https://api.chucknorris.io/
-The app functions in a way that it fetches all the categories that are available and deisplays them on the frontend which is build using React. On each category you get to view a single random funny fact on clicking the button.
+The app fetches data from a REST api from https://api.chucknorris.io/, using a GraphQL API and Apollo Server.
+The app then renders all the categories that are available on the frontend which is build using React and Apollo Client. On each category you get to view a single random funny fact on clicking the button.
 
 ### Prerequisites:
 
@@ -24,7 +24,7 @@ To run this project localyou need to have this installed on your machine: - VS C
       Clone the repo into your local machine using in your CLI/Bash
         - git clone https://github.com/PawleN-D/chuck-facts.git
       After downloading the repo, gain access and install dependancies to it using:
-        - cd chuck-facts && npm start
+        - cd chuck-facts && npm install
       There are two top level directories: server & client. Access each respectively and install dependancies (use different terminals):
         - cd server && npm install
         - cd clirnt && npm install
