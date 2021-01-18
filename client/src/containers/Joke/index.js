@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { gql, useQuery } from "@apollo/client";
-import JokeTile from "./components/Joketile";
-import Header from "./components/Header"
+import JokeTile from "../../components/JokeTile";
+import Header from "../../components/Header"
 
 
 export const GET_JOKE = gql`

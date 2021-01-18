@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import Joke from './Joke';
+import injectStyles from "./assets/styles"
+import App from './containers/App';
+import Joke from './containers/Joke';
 
 // import Header from "./components/Header"
 import {
@@ -24,7 +25,7 @@ const client = new ApolloClient({
     uri: 'http://localhost:4000/graphql'
   })
 })
-
+injectStyles();
 ReactDOM.render(
     <ApolloProvider client={client}>
       <Router>

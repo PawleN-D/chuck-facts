@@ -1,8 +1,9 @@
 import React, { Fragment } from "react";
 import { useQuery, gql } from '@apollo/client';
 import { withRouter } from "react-router";
-import CategoryTile from "./components/Categorytile";
-import Header from "./components/Header";
+import CategoryTile from "../../components/CategoryTile";
+import Header from "../../components/Header";
+import { TextContainer } from "../../assets/Card";
 
 
 
@@ -26,11 +27,13 @@ const Categories = () => {
   return (
     <Fragment>
       <Header />
-      {data.categories &&
+      <TextContainer>
+        {data.categories &&
         data.categories &&
         data.categories.map((category, index)=> (
           <CategoryTile key={index} category={category.name} />
         ))}
+      </TextContainer>
     </Fragment>
 
   );
