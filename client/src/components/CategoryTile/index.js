@@ -1,19 +1,21 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { Button } from '../../assets/Button';
-import { CardContainer } from '../../assets/Card';
+import { CategoryContainer } from '../../assets/Card';
 
 const CategoryTile = ({ category }) => {
     return (
-        <CardContainer>
+        <CategoryContainer>
             <div className="info">
                 <h3>Fun Fact About:</h3>
                 <p>{category} Category</p>
-                <Button>
-                    <Link to={`/random?category=${category}`} className="link"> Discover Fact</Link>
-                </Button>
+                <Link to={`/random?category=${category}`} className="link">
+                    <Button>
+                        Discover Fact!
+                    </Button>
+                </Link>
             </div>
-        </CardContainer>        
+        </CategoryContainer>        
     
     )
 }

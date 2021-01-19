@@ -84,10 +84,5 @@ export default () => injectGlobal({
     textAlign: 'center',
   },
 
-  '.link': {
-    textDecorationStyle: 'none',
-
-  }
-
 });
 

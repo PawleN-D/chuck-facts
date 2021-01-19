@@ -18,16 +18,36 @@ ${'' /* Bigger Devices i.e Desktops and Laptop */}
 
 
 `
-export const CardContainer = styled.div`
+export const CategoryContainer = styled.div`
   background-color: #d1d1d1;
   color: #343c5a;
   padding: 2.2rem;
   height: 100%;
   box-shadow: 6px 10px 20px 0px rgba(0,0,0,0.65);
+  border-radius: 2%;
 
 
   @media (min-width: 45.563em) and (max-width: 61.312em) {
     width: 100%;
+  }
+
+`
+
+export const JokeContainer = styled.div`
+  background-color: #d1d1d1;
+  color: #343c5a;
+  padding: 2.5rem;
+  height: 100%;
+  box-shadow: 6px 10px 20px 0px rgba(0,0,0,0.65);
+  border-radius: 5px;
+  margin: 0 60px;
+  display: flex;
+  justify-content: space-evenly;
+
+
+  @media (min-width: 45.563em) and (max-width: 61.312em) {
+    width: 80%;
+    margin-left: 85px;
   }
 
 }
