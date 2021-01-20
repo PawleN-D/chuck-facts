@@ -16,8 +16,8 @@ const Header = () => {
                      />
                 </div>
                 <div className="main-heading">
-                    <h1 className="text-primary text-center">Chuck Norris!</h1>
-                    <p className="text-center fw-bold">Funny Facts!</p>
+                    <h1>Chuck Norris!</h1>
+                    <p>Funny Facts!</p>
                 </div>
             </div>
         </div>

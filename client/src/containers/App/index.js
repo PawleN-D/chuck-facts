@@ -21,7 +21,7 @@ const Categories = () => {
   const { data, loading, error } = useQuery(GET_CATEGORIES);
 
   if (loading) return <p>Loading</p>
-  if (error) return <p>ERROR</p>;
+  if (error) return <p>ERROR {error}</p>;
   if (!data) return <p>Not found</p>;
 
   return (
