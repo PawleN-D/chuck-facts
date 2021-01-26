@@ -9,7 +9,7 @@ The app then renders all the categories that are available on the frontend which
 
 ### Prerequisites:
 
-To run this project localyou need to have this installed on your machine: - VS Code(or any other code editor) - nodejs latest version - update npm pacakges - Modern Web browser but preferably Chrome - Git Bash
+To run this project locally you need to have this installed on your machine: - VS Code(or any other code editor) - nodejs latest version - update npm pacakges - Modern Web browser but preferably Chrome - Git Bash
 
 ### Libraries and frameworks
 
@@ -27,8 +27,8 @@ To run this project localyou need to have this installed on your machine: - VS C
         - cd chuck-facts && npm install
       There are two top level directories: server & client. Access each respectively and install dependancies (use different terminals):
         - cd server && npm install
-        - cd clirnt && npm install
-      After installation of dependancies in both repos, chande directory to the main directory:
+        - cd client && npm install
+      After installation of dependancies in both repos, change directory to the main directory:
         - cd ..
       Run this command and the app will start
         - npm run dev
