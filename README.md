@@ -1,3 +1,4 @@
+[![Board Status](https://dev.azure.com/sirpawle/0ec5b5e2-eaf7-4a44-b1a9-29c335dc116b/8de949d3-a443-4cfb-bedd-95d73202a272/_apis/work/boardbadge/a06fe4a5-16d4-4234-b2bb-0d769b371698)](https://dev.azure.com/sirpawle/0ec5b5e2-eaf7-4a44-b1a9-29c335dc116b/_boards/board/t/8de949d3-a443-4cfb-bedd-95d73202a272/Microsoft.RequirementCategory)
 # Chuck Norris Funny Facts
 
 - This is a fulllstack roject built on with GraphQlAPI, apollo, NodeJs and React.
